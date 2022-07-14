@@ -5,8 +5,7 @@ OBJ=so_long.o
 	$(CC) -Wall -Wextra -Werror -Imlx -c $< -o $@
 $(NAME): $(OBJ)
 	make -C mlx
-	mv mlx/libmlx.dylib .
-	$(CC) $(OBJ) -L. -lmlx -framework OpenGL -framework AppKit -o $(NAME)
+	$(CC) $(OBJ) -Lmlx -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 all :$(NAME) 
 
 norm :
