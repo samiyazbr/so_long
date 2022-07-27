@@ -2,6 +2,11 @@
 ### The aim of the mandatory part:
 To create a 2D game where any hero collects any valuables before leaving the place. It is built to make our work with textures, sprites and some gameplay elements.
 
+Run
+1)make
+2)./so_long maps/map4.ber
+
+
 ### Example of a .ber map:
 ```
 1111111111111111111111111
@@ -21,6 +26,3 @@ To create a 2D game where any hero collects any valuables before leaving the pla
 >- **C** for a collectible,
 >- **E** for a map exit,
 >- **P** for the player’s starting position,
- Run
-1)make
-2)./so_long maps/map4.ber
