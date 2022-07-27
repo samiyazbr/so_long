@@ -21,6 +21,6 @@ To create a 2D game where any hero collects any valuables before leaving the pla
 >- **C** for a collectible,
 >- **E** for a map exit,
 >- **P** for the player’s starting position,
- Run:
-%> make
-%> ./so_long maps/map4.ber
+ Run
+1)make
+2)./so_long maps/map4.ber
