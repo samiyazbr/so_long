@@ -2,7 +2,7 @@
 
 this is a 2D game made using minilibx and c programming language.
 
-how to play this game:
+how to play this game: \
 w & up arrow key - up \
 a & left arrow key - left \
 d & right arrow key - right \
