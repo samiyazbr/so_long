@@ -9,7 +9,7 @@ d & right arrow key - right \
 s & down arrow key - down \
 ESC KEY - to exit the game. 
 
-to win the game collect all coins exit through the key
+to win the game collect all coins and exit through the key
 
 how to run:
 > make \
