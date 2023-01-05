@@ -16,8 +16,8 @@ how to run:
 > ./so_long maps/map4.ber
 
 ###map:
-> P - player
-> E - exit
-> C - coin
-> 1 - wall
+> P - player \
+> E - exit  \
+> C - coin  \
+> 1 - wall  \
 > 0 - empty space
