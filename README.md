@@ -15,7 +15,7 @@ how to run:
 > make \
 > ./so_long maps/map4.ber
 
-###map:
+##map:
 > P - player \
 > E - exit  \
 > C - coin  \
