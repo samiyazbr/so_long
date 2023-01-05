@@ -11,7 +11,7 @@ ESC KEY - to exit the game.
 
 to win the game collect all coins and exit through the key
 
-how to run:
+## how to run:
 > make \
 > ./so_long maps/map4.ber
 
