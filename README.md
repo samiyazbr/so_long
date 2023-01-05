@@ -14,3 +14,10 @@ to win the game collect all coins and exit through the key
 how to run:
 > make \
 > ./so_long maps/map4.ber
+
+###map:
+> P - player
+> E - exit
+> C - coin
+> 1 - wall
+> 0 - empty space
