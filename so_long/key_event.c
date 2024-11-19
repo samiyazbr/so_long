@@ -77,6 +77,7 @@ static void	player_location(t_map *map, int x, int y)
 
 int	key_press(int keycode, t_map *map)
 {
+	// printf("Key pressed: %d\n", keycode);
 	if (keycode == KEY_ESC)
 	{
 		write(1, "\033[0;36mYou Enter the ESC Key. Good Bye! :)\033[0m\n", 47);

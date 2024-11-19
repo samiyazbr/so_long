@@ -6,11 +6,18 @@ LIB			=	${LIB_PATH}libft.a
 
 SRCS		=	${wildcard *.c}
 
-MLX_PATH	=	mlx/
+#for macOS
+# MLX_PATH	=	mlx/
+
+# for linux
+MLX_PATH	=	minilibx-linux/
 
 MLX			=	${MLX_PATH}libmlx.a
 
-MLXFLAGS	=	-L ${MLX_PATH} -lmlx -framework OpenGL -framework AppKit
+# for macOS
+# MLXFLAGS	=	-L ${MLX_PATH} -lmlx -framework OpenGL -framework AppKit
+
+MLXFLAGS = -L minilibx-linux/ -lmlx -lGL -lGLU -lX11 -lXext -lm
 
 HEADER		=	-I include/
 OBJS		=	${SRCS:.c=.o}

@@ -71,11 +71,17 @@ void	so_long(char *filename)
 	width = map.width * 32;
 	height = map.height * 32;
 	mlx.win = mlx_new_window(mlx.mlx, width, height, "so_long");
+	if (!mlx.win)
+	{
+    fprintf(stderr, "Error: Failed to create window.\n");
+    exit(EXIT_FAILURE);
+	}
 	init_img(&mlx, &img);
 	paint_map(&mlx, &map, &img);
 	map.mlx = mlx;
 	map.img = img;
-	mlx_hook(mlx.win, X_EVENT_KEY_PRESS, X_NO_EVENT_MASK, &key_press, &map);
+	// mlx_hook(mlx.win, X_EVENT_KEY_PRESS, X_NO_EVENT_MASK, &key_press, &map);
+	mlx_key_hook(mlx.win, &key_press, &map);
 	mlx_hook(\
 	mlx.win, X_EVENT_DESTROY_NOTIFY, X_NO_EVENT_MASK, &program_close, &map);
 	mlx_loop(mlx.mlx);

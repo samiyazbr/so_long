@@ -56,18 +56,32 @@ typedef struct s_check
 	int	collect;
 }	t_check;
 
+// macOS keycode
+// # define X_EVENT_KEY_PRESS 2
+// # define X_EVENT_DESTROY_NOTIFY 17
+// # define X_NO_EVENT_MASK 0
+// # define KEY_ESC 53
+// # define KEY_A 0
+// # define KEY_S 1
+// # define KEY_D 2
+// # define KEY_W 13
+// # define KEY_LEFT 123
+// # define KEY_RIGHT 124
+// # define KEY_DOWN 125
+// # define KEY_UP 126
+
 # define X_EVENT_KEY_PRESS 2
 # define X_EVENT_DESTROY_NOTIFY 17
 # define X_NO_EVENT_MASK 0
-# define KEY_ESC 53
-# define KEY_A 0
-# define KEY_S 1
-# define KEY_D 2
-# define KEY_W 13
-# define KEY_LEFT 123
-# define KEY_RIGHT 124
-# define KEY_DOWN 125
-# define KEY_UP 126
+#define KEY_W 119  // 'W' key on Windows/WSL
+#define KEY_S 115  // 'S' key
+#define KEY_A 97   // 'A' key
+#define KEY_D 100  // 'D' key
+#define KEY_ESC 27 // ESC key
+# define KEY_LEFT 65361
+# define KEY_RIGHT 65363
+# define KEY_DOWN 65364
+# define KEY_UP 65362
 
 void	so_long(char *filename);
 void	parsing_map(t_map *map, char *filename);
